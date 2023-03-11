@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            p.big {
+                line-height: 1.8;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/0cb41ea926.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#portfolio">Work Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-sharp fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                    </ul>   
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    <img src="images/logo-no-background.png" width="180" height="50" class="logo" style="float: right;">
+                    
+                </nav>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I'm <span>Ankit</span> Kishor Lunawat</h1>
+                    <h2><br>Master's in Computer Science, UTA</h2>
+                </div>
+            </div>
+
+        </div>
+<!-- -----------------------------About--------------------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/About_me_1_624x811.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p class="big">I am a driven and enthusiastic software developer with experience in Java and Python development.
+                           I have 3.5 years of experience developing RESTful web services and Spring Boot applications and I am continuously learning and keeping up-to-date with industry trends through online courses and personal projects.
+                            I am passionate about software development and am seeking new opportunities to further develop my skills.
+                            If you're looking for a driven and enthusiastic software developer with a solid foundation in Java and Python, let's connect!
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('projects')">Projects</p>
+                            <p class="tab-links" onclick="opentab('extra-curricular')">Extra-curricular</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="projects">
+                            <ul>
+                                <li><span style="line-height: 2;">Lunamar's management website</span><br>Lunamar is a subdivision of buildings and apartments, and our webpage consists of complete management of all<br>Using front and back-end technologies created a website which manages interaction between roles and services</li>
+                                <li><span style="line-height: 2;">Deep Learning based Covid-19 detection using CT scan</span><br>Conjugate different models such as DenseNet201, Resnet50V2, VGG16 and Inceptionv3 for pre-training dataset<br>Differentiating accurately between pneumonia and covid-19 by implementing FPN layers in the model</li>
+                                <li><span style="line-height: 2;">File Synchronization using socket connection and multithreading</span><br>Autonomously synchronizing the composite directory listing from multiple servers using socket connection<br>Locking and unlocking of the files, upon unlocking making file consistent across all the servers</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="extra-curricular">
+                            <ul>
+                                <li><span>JLPT N3 Certified</span><br>Japanese Language Proficiency Test</li>
+                                <li><span>Technical Head</span><br>Indian Mavericks Society, UTA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<!-- --------------------------Education-------------------------- -->
+        <div id="education">
+            <div class="container">
+
+                <h1 class="sub-title">My Education</h1>
+                <div class="education-list">
+                    <div>
+                        <h2><img src="/images/a-mark-logo.png" style="vertical-align: middle;" width="100px"/> 
+                        <span style="vertical-align: middle;"> University of Texas at Arlington</span></h2>
+                        <p><br>August 2021 - May 2023</p><br> Master's in Computer Science, specializing in Artificial Intelligence<p><br>
+                         and Database Systems</p><p><br> 4.0/4.0 GPA</p><br>
+                        <form method="get" action="Masters_Transcript.pdf">
+                            <button type="submit">Download Transcript</button>
+                        </form>
+                    </div>
+                    <div>
+                        <h2><img src="/images/uop_logo.jpg" style="vertical-align: middle;" width="100px"/> 
+                        <span style="vertical-align: middle;">Savtribai Phule Pune University</span></h2>
+                        <p><br>August 2013 - May 2017</p><br> Bachelor's in Information Technology<p><br> 3.4/4.0 GPA</p><br>
+                        <form method="get" action="Bachleor's transcript.pdf">
+                            <button type="submit">Download Transcript</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+<!-- --------------------------Work Experience----------------------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/CSE_UTA.png">
+                        <div class="layer">
+                            <h3>Graduate Teaching Assistant</h3>
+                            <p><br>• Conducting class, having office hours to guide students on their projects, solving problems of the students
+                            related to coursework and coding</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Nsqaure_Xperts_LLP.jpeg">
+                        <div class="layer">
+                            <h3>Software Developer</h3>
+                            <p><br>• Mentored a process re-engineering<br> project that improved communication among 30 employees and reduced paperwork by 75%.<br>
+                                • Designed and implemented a CI/CD pipeline using Docker, Jenkins, Gradle, and Maven to automate deployments by containerization of application and reducing human intervention by 60%<br>
+                                • Leveraged AWS cloud services such as S3, EC2, Lambda, and Azure app-services, blob containers to optimize application
+                                performance and scalability<br>
+                                • Executed Spring MVC framework in presentation tier for all essential control flow, business level validations and for
+                                communicating with business layer</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/fujitsu.jpeg">
+                        <div class="layer">
+                            <h3>Assistant Application Developer</h3>
+                            <p><br>• Transformed COBOL to Java insurance system migration which saved up to 20% of maintenance charges<br>
+                                • Developed tools using Java-FX library and VBA that led to 75% decrease in manual work<br>
+                                • Developed several tools, including a mask image editor and a mask image viewer, to reduce manual labor by 40%</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+<!-- --------------------------Skills----------------------     -->
+        <div id="skills">
+            <div class="container">
+                <h2 class="sub-title"> My Skills</h2>
+                <div class="skills-list">
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                        <p>Java, Python, C</p>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Web Technologies</h3>
+                        <p>HTML5, CSS, JavaScript</p>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database Management</h3>
+                        <p>MySQL, MongoDB, PostgreSQL, SQL Server</p>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Server Administration</h3>
+                        <p>Linux, AWS, Azure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+  
+
+<!-- --------------------contact----------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> ankitlunawat7@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> +1 682-241-2496</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/ankit.lunawat.7"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com/ankit_lunawat7"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.instagram.com/lunawatankit/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ankitlunawat/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/Ankit_resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Feedback matters most"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycby9nXz6u3joRmQhoyMFcVN3T7_n5Htmx8X2IObEsOg7sBsFbBVpG3DI2GharY3Jx40TYg/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Thank you for your feedback!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },4000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+
+    </body>
+</html>
