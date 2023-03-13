@@ -18,7 +18,7 @@ body{
     height: 100vh;
     background-image: url("/images/Background.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 650px 650px;
     background-position: right;  
     
 }
